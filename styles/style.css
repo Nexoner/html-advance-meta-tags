@@ -22,12 +22,15 @@ header {
 }
 
 main {
-   height: 300px;
    font-family: "Anta", sans-serif;
-   display: flex;
    border: 2px black solid;
    border-top: 1px black solid;
    border-bottom: 1px black solid;
+}
+
+.home-main {
+   height: 300px;
+   display: flex;
 }
 
 footer {
@@ -35,6 +38,10 @@ footer {
    border-top: 1px black solid;
    height: 815px;
    padding: 14px;
+}
+
+.no-comm-footer {
+   height: 415px;
 }
 
 .info {
@@ -128,6 +135,25 @@ footer {
 .rights {
    margin-top: 20%;
    text-align: center;
+}
+
+.projects-title-container {
+   margin: 25px;
+}
+
+.projects-items {
+   display: flex;
+   width: 100%;
+   margin: 2% 0 2%0;
+   justify-content: space-around;
+}
+
+.projects-item {
+   border: 3px black solid;
+   border-radius: 12px;
+   width: 40%;
+   margin: 15px;
+   padding: 8px;
 }
 
 
