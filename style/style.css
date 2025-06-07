@@ -1,5 +1,99 @@
+* {
+   text-decoration: none;
+}
 
-.container {
+body {
+   padding: 12px;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+header {
+   border: 2px black solid;
+   border-bottom: 1px black solid;
+}
+
+main {
+   height: 300px;
+   font-family: "Anta", sans-serif;
+   display: flex;
+   border: 2px black solid;
+   border-top: 1px black solid;
+   border-bottom: 1px black solid;
+}
+
+footer {
+   border: 2px black solid;
+   border-top: 1px black solid;
+   height: 415px;
+}
+
+.info {
+   flex-grow: 2;
+   border-left: 2px black solid;
+   padding-left: 14px;
+}
+
+.info-2 {
+   flex-grow: 1;
+   border-right: 2px black solid;
+   padding-left: 14px;
+}
+
+.info-flex {
    display: flex;
    flex-direction: column;
+   flex-grow: 2;
 }
+
+.info-flex-item {
+   flex-grow: 1;
+   padding-left: 14px;
+}
+
+.info-flex-item.border {
+   border-bottom: 2px black solid;
+}
+
+.projects {
+   grid-column-start: 1;
+   grid-column-end: 2;
+}
+
+.nav-bar {
+   display: flex;
+}
+
+.work-name {
+   font-family: "Anta", sans-serif;
+   align-content: space-around;
+}
+
+.logo {
+   margin-left: 60px;
+}
+
+.nav-links {
+   display: flex;
+   flex-grow: 2;
+   justify-content: flex-end;
+   padding-right: 24px;
+   font-size: 36px;
+   margin-top: 10px;
+}
+
+.nav-item {
+   font-size: 24px;
+   padding: 8px 12px 14px 14px;
+}
+
+.work-name {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 248px;
+}
+

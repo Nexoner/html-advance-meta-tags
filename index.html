@@ -5,28 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Meta</title>
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Edu+VIC+WA+NT+Hand:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <div class="container">
         <div class="nav-bar">
-          <div class="logo">
+          <div class="logo" style="flex-grow: 1">
             <h1>Nexoner</h1>
           </div>
-          <nav class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Projects</a>
-            <a href="#">Article</a>
-            <a href="#">Contact</a>
+          <nav class="nav-links" style="flex-grow: 2">
+            <a href="#" class="nav-item">Home</a> /
+            <a href="#" class="nav-item">Projects</a> /
+            <a href="#" class="nav-item">Article</a> /
+            <a href="#" class="nav-item">Contact</a>
           </nav>
-          <div>
-            <h1>Frontend developer</h1>
-          </div>
+        </div>
+        <div class="work-name">
+          <h1>Frontend developer</h1>
         </div>
       </div>
     </header>
     <main>
-      <div class="container">
+      <div class="info-2">
         <h2>Projects</h2>
         <ul class="projects-list">
           <li class="project-item">HTML Only Partfolio</li>
@@ -34,23 +40,25 @@
           <li class="project-item"></li>
         </ul>
       </div>
-      <div class="grid-container">
-        <div class="container">
+      <div class="info-flex">
+        <div class="info-flex-item border">
           <h3>Work experience</h3>
           <a href="#">Wisit my profile</a>
         </div>
-        <div class="container">
+        <div class="info-flex-item">
           <h3>OpenSource Work</h3>
           <a href="#">View my profile</a>
         </div>
-        <div class="container">
-          <h3>Education</h3>
-          <span>Html school</span>
-        </div>
       </div>
+      <div class="info">
+        <h3>Education</h3>
+        <span>Html school</span>
+      </div>
+    </main>
+    <footer>
       <div>
         <h2>Recension</h2>
       </div>
-    </main>
+    </footer>
   </body>
 </html>
