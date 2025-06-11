@@ -255,4 +255,36 @@ footer {
 
 }
 
+@media (max-width: 500px) {
+
+   .nav-bar {
+      padding: 0;
+   }
+
+   .nav-links {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      padding-right: 0;
+   }
+
+   .nav-links > span {
+      display: none;
+   }
+
+   .nav-links:last-child {
+      border-bottom: 2px black solid;
+   }
+
+   .nav-item {
+      border-top: 2px solid black;
+      margin: 0;
+      padding-bottom: 14px;
+      padding-top: 14px;
+      background-color: aliceblue;
+   }
+
+
+}
+
 
