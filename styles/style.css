@@ -198,6 +198,58 @@ footer {
 }
 
 
+.cl-component {
+width: 80%;
+margin: 10%;
+align-items: center;
+border: 2px black solid;
+border-radius: 15px;
+font-family: "LXGW Marker Gothic", sans-serif;
+}
+
+.cl-component > a {
+   text-decoration: none;
+   color: black;
+}
+
+.cl-title-container {
+   text-align: center;
+}
+
+.cl-main-container {
+   display: flex;
+   flex-direction: column;
+   margin: 5%;
+}
+
+.cl-item {
+   display: flex;
+   flex-direction: row;
+   margin: 1%;
+}
+
+.cl-date {
+   width: 20%;
+   text-align: center;
+}
+
+.cl-img {
+   width: 10%;
+}
+
+.cl-item-info {
+   width: 70%;
+   text-align: center;
+}
+
+.back-button {
+   width: 92%;
+   height: 4%;
+   text-align: center;
+   margin: 4%;
+}
+
+
 @media (max-width:800px) {
    
    .container {
