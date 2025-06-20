@@ -57,14 +57,37 @@
     </header>
     <main>
       <div class="form-container">
-        <form class="forme">
-          <label for="fname">First name:</label><br />
-          <input type="text" id="first-name" name="fname" /><br />
-          <label for="mail">Email address:</label><br />
-          <input type="email" name="mail" id="your-mail" /><br />
-          <label for="message">Your message:</label><br />
-          <input type="text" id="user-message" name="message" />
-          <input type="submit" value="Submit" />
+        <form class="form">
+          <label class="form-lbl" for="fname">First name</label>
+          <input
+            class="form-inp"
+            type="text"
+            id="first-name"
+            name="fname"
+            placeholder="Ivan"
+          />
+          <label class="form-lbl" for="mail">Email address</label>
+          <input
+            class="form-inp"
+            type="email"
+            name="mail"
+            id="your-mail"
+            placeholder="aboba@gmail.com"
+          />
+          <label class="form-lbl" for="message">Your message</label>
+          <textarea
+            cols="500"
+            class="form-inp"
+            type="textarea"
+            id="user-message"
+            name="message"
+            placeholder="Напишите ваше сообщение..."
+            maxlength="512"
+          >
+          </textarea>
+          <div id="form-sub-btn">
+            <input id="form-sub-btn" type="submit" value="Submit" />
+          </div>
         </form>
       </div>
     </main>
