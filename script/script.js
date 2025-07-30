@@ -1,26 +1,34 @@
-const tabs = document.querySelectorAll('.tab');
-const tabContent = document.querySelectorAll('.tab-content');
+document.addEventListener('DOMContentLoaded', function () {
+  const tabs = document.querySelectorAll('.tab');
+  const tabContents = document.querySelectorAll('.tab-content');
 
-console.log(tabs);
-console.log(tabContent);
+  // Скрыть все tab-content по умолчанию
+  tabContents.forEach((content) => {
+    content.style.display = 'none';
+  });
 
-tabContent.forEach((content) => {
-  content.style.display = 'none';
-});
+  // Отобразить первый tab-content по умолчанию
+  const firstTabContent = document.getElementById('content1');
+  if (firstTabContent) {
+    firstTabContent.style.display = 'block';
+  }
 
-const firstTabContent = document.getElementById('content1');
-console.log(firstTabContent);
-firstTabContent.style.display = 'block';
+  // Добавить обработчики событий для каждого таба
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', function () {
+      // Скрыть все tab-content
+      tabContents.forEach((content) => {
+        content.style.display = 'none';
+      });
 
-tabs.forEach((tab) => {
-  addEventListener('click', function () {
-    tabContent.forEach((content) => {
-      content.style.display = 'none';
+      // Отобразить текущий tab-content
+      const currentTabContent = document.getElementById(
+        `tab${this.id.slice(0, -1)}`
+      );
+      console.log(currentTabContent);
+      if (currentTabContent) {
+        currentTabContent.style.display = 'block';
+      }
     });
-
-    const currentTabContent = document.getElementById(this.id.slice(0, -1));
-    if (currentTabContent) {
-      currentTabContent.style.display = 'block';
-    }
   });
 });
