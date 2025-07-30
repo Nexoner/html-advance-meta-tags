@@ -277,6 +277,81 @@ font-family: "LXGW Marker Gothic", sans-serif;
    margin: 4%;
 }
 
+.cookie-consent {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 24px;
+    border-radius: 16px;
+    max-width: 320px;
+    width: 90%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    position: fixed; /* или absolute, в зависимости от потребностей */
+    bottom: 20px;
+    right: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    transform: translateY(200%); /* Начальное положение за экраном */
+    animation: slideUp 0.5s ease-out forwards; /* Анимация появления */
+}
+
+/* Анимация для плавного появления */
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+    }
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #fff;
+}
+
+.cookie-icon {
+    width: 48px;
+    height: 48px;
+    fill: #ffffff;
+    margin-bottom: 16px;
+}
+
+.cookie-text {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+.accept-btn {
+    background-color: #ffffff;
+    color: #111111;
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    width: 100%;
+    font-size: 1rem; /* 16px */
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.accept-btn:hover {
+    background-color: #e6e6e6;
+}
+
+.accept-btn:active {
+    transform: scale(0.98);
+}
+
 
 @media (max-width:800px) {
    
