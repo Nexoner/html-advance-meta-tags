@@ -1,8 +1,4 @@
 
-body {
-   font-size: 28px;
-}
-
 .tabs-container {
    border: 4px black solid;
    border-radius: 22px;
@@ -24,6 +20,7 @@ body {
 }
 
 .tab-content {
+   display: none;
    margin: 5px;
    padding: 5px;
    text-align: center;
@@ -40,5 +37,5 @@ body {
 }
 
 .active {
-   display: flex;
+   display: block;
 }

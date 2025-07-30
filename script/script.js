@@ -2,32 +2,24 @@ document.addEventListener('DOMContentLoaded', function () {
   const tabs = document.querySelectorAll('.tab');
   const tabContents = document.querySelectorAll('.tab-content');
 
-  // Скрыть все tab-content по умолчанию
-  tabContents.forEach((content) => {
-    content.style.display = 'none';
-  });
-
-  // Отобразить первый tab-content по умолчанию
-  const firstTabContent = document.getElementById('content1');
+  // Отобразить первый tab по умолчанию
+  const firstTabContent = document.getElementById('contenttab1');
   if (firstTabContent) {
-    firstTabContent.style.display = 'block';
+    firstTabContent.classList.add('active');
   }
 
   // Добавить обработчики событий для каждого таба
-  tabs.forEach((tab) => {
+  tabs.forEach(tab => {
     tab.addEventListener('click', function () {
-      // Скрыть все tab-content
-      tabContents.forEach((content) => {
-        content.style.display = 'none';
+      // Убрать active у всех tab-content
+      tabContents.forEach(content => {
+        content.classList.remove('active');
       });
 
-      // Отобразить текущий tab-content
-      const currentTabContent = document.getElementById(
-        `tab${this.id.slice(0, -1)}`
-      );
-      console.log(currentTabContent);
+      // Добавить active у текущего tab-content
+      const currentTabContent = document.getElementById(`content${tab.id}`);
       if (currentTabContent) {
-        currentTabContent.style.display = 'block';
+        currentTabContent.classList.add('active');
       }
     });
   });

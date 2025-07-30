@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Anta&family=Edu+VIC+WA+NT+Hand:wght@400..700&display=swap"
       rel="stylesheet"
     />
+        <link rel="stylesheet" href="../styles/simpletabs.css" />
     <title>Article</title>
   </head>
   <body>
@@ -57,38 +58,55 @@
     </header>
     <main>
       <div class="articles">
-        <div class="article">
-          <h4 class="article-title">Article name</h4>
+      <div class="tabs-container">
+        <div class="tabs">
+          <div class="tab" id="tab1"><p>First Tab</p></div>
+          <div class="tab" id="tab2"><p>Second Tab</p></div>
+          <div class="tab" id="tab3"><p>Third Tab</p></div>
+          <div class="tab" id="tab4"><p>Fourth Tab</p></div>
+        </div>
+        <div class="tab-content" id="contenttab1">
           <span
-            >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
-            aperiam placeat provident perferendis rerum est veritatis,
-            asperiores quos iure iste fuga pariatur. Mollitia delectus a ipsa,
-            corrupti adipisci deserunt excepturi!</span
+            >Clicking each tab shuld hide the content of the other tab and show
+            the content of clicked tab. By default, enable the first tab.</span
+          >
+          <div><span>First Tab content to be displayed here</span></div>
+          <span
+            >And some dummy content or just add a simple text showing the
+            tab</span
           >
         </div>
-        <div class="article">
-          <h4 class="article-title">Article name</h4>
+        <div class="tab-content" id="contenttab2">
           <span
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            maiores nulla dolor optio dolores aperiam, vitae nostrum
-            consequuntur adipisci neque illo. Rerum, et! Expedita itaque tempora
-            doloremque officia possimus explicabo?</span
+            >Clicking each tab shuld hide the content of the other tab and show
+            the content of clicked tab. By default, enable the first tab.</span
+          >
+          <div><span>Secont Tab content to be displayed here</span></div>
+          <span
+            >And some dummy content or just add a simple text showing the
+            tab</span
           >
         </div>
-        <div class="article">
-          <h4 class="article-title">Article name</h4>
+        <div class="tab-content" id="contenttab3">
           <span
-            >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
-            placeat tenetur necessitatibus animi inventore explicabo.</span
+            >Clicking each tab shuld hide the content of the other tab and show
+            the content of clicked tab. By default, enable the first tab.</span
+          >
+          <div><span>Thrid Tab content to be displayed here</span></div>
+          <span
+            >And some dummy content or just add a simple text showing the
+            tab</span
           >
         </div>
-        <div class="article">
-          <h4 class="article-title">Article name</h4>
+        <div class="tab-content" id="contenttab4">
           <span
-            >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis
-            itaque quasi repellat dolores? Exercitationem quisquam ipsam ad
-            eligendi ut sed officia ipsa aperiam unde voluptate veritatis
-            provident fugiat, assumenda dolorum.</span
+            >Clicking each tab shuld hide the content of the other tab and show
+            the content of clicked tab. By default, enable the first tab.</span
+          >
+          <div><span>Four Tab content to be displayed here</span></div>
+          <span
+            >And some dummy content or just add a simple text showing the
+            tab</span
           >
         </div>
       </div>
@@ -98,5 +116,6 @@
         <h2>@ all rights reserved 2025</h2>
       </div>
     </footer>
+    <script src="../script/script.js"></script>
   </body>
 </html>
