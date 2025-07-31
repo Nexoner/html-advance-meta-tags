@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Добавить обработчики событий для каждого таба
-  tabs.forEach(tab => {
+  tabs.forEach((tab) => {
     tab.addEventListener('click', function () {
       // Убрать active у всех tab-content
-      tabContents.forEach(content => {
+      tabContents.forEach((content) => {
         content.classList.remove('active');
       });
 
