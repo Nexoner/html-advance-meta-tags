@@ -17,6 +17,10 @@ a:hover {
    border-radius: 10px;
 }
 
+#changelog-button:hover {
+   border-bottom: 0px;
+}
+
 header {
    border: 2px black solid;
    border-bottom: 1px black solid;
