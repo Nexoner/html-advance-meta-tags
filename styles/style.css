@@ -12,6 +12,10 @@ a {
    padding: 4px;
 }
 
+ul {
+   list-style-type: none;
+}
+
 a:hover {
    border-bottom: 3px darkslategray solid;
    border-radius: 10px;
