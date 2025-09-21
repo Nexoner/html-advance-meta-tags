@@ -45,6 +45,8 @@ main {
 
     .change-log__title {
         margin-left: 1em;
+        display: flex;
+        justify-content: center;
     }
 
     .change-logs__main {
@@ -114,16 +116,6 @@ main {
     }
 }
 
-.nav-bar {
-    display: flex;
-}
-.nav-links {
-    display: flex;
-}
-.tooltip-text {
-    display: none;
-}
-
 .testimonial-card {
     display: flex;
     justify-content: center;
@@ -171,4 +163,8 @@ main {
     border-radius:50%;
     background-color: var(--color-primal);
     cursor: pointer;
+}
+
+.hidden {
+    display: none;
 }
