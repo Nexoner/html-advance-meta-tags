@@ -1,40 +1,5 @@
 @import "tailwindcss";
 
-:root {
-    --color-main: #F5F5F5;
-    --color-primal: #004BFF;
-    --color-text-main: #000000;
-    --color-text-primal: #666666;
-    --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    --font-title: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-header {
-    background-color: var(--color-main);
-    border-radius: 24px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-body {
-    margin: 1% 2% 2% 2%;
-    border-radius: 12px;
-    font-family: var(--font);
-}
-
-h1, h2, h3, h4 {
-    font-family: var(--font-title);
-    color: var(--color-primal);
-}
-
-a {
-    color: var(--color-primal);
-}
-
-
-ul {
-    list-style-type: none;
-}
-
 main {
     background-color: var(--color-main);
     border-radius: 24px;
@@ -80,41 +45,6 @@ main {
     }
 }
 
-.nav-bar {
-    display: flex;
-    
-
-    .logo {
-        margin-left: 2%;
-    }
-
-    .nav-links {
-        display: flex;
-        justify-content: flex-end;
-    
-
-        .nav-item {
-            padding: 0 2.5% 0 2.5%;
-            display: flex;
-            align-items: center;
-        
-
-            a {
-                text-decoration: none;
-                color: black;
-                font-weight: 500;
-                font-size: large;
-                transition: 0.2s;
-            }
-            a:hover {
-                transform: scale(1.1);
-            }
-        }
-        .tooltip-text {
-            display: none;
-        }
-    }
-}
 
 .testimonial-card {
     display: flex;
@@ -141,15 +71,15 @@ main {
 }
 
 .overlay {
-    position: absolute; /* Абсолютное позиционирование для наложения */
-    top: 30vh; /* Позиционируем сверху */
+    position: absolute;
+    top: 30vh;
     left: 28vw;
-    right: 28vw; /* Позиционируем слева */
-    z-index: 1; /* Устанавливаем z-index для наложения поверх других элементов */
-    display: flex; /* Используем flexbox для центрирования */
-    justify-content: center; /* Центрируем по горизонтали */
-    align-items: center; /* Центрируем по вертикали */
-    color: var(--color-text-main); /* Цвет текста */
+    right: 28vw;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text-main);
 }
 
 .btn-con {
