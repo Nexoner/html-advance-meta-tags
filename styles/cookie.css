@@ -1,63 +1,123 @@
 
 .cookie-consent {
-    background-color: var(--color-main);
-    border-radius: 12px;
-    width: 20em;
-    padding: 2vh;
-    z-index: 1;
+    position: fixed;
+    right: 2.5%;
+    bottom: 3%;
+    z-index: 60;
+    width: min(360px, 90vw);
+    padding: 1rem 1.25rem 1.1rem;
+    border-radius: 18px;
+
+    background: radial-gradient(circle at top left, rgba(217, 70, 239, 0.22), transparent 60%),
+      rgba(15, 23, 42, 0.94);
+    border: 1px solid var(--accent-soft);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    color: var(--text-main);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 0.6rem;
+    row-gap: 0.35rem;
+}
+
+.cookie-consent .close-btn {
     position: absolute;
-    bottom: 2%;
-    right: 2%;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    top: 6px;
+    right: 6px;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 999px;
+    border: none;
+    background: rgba(15, 23, 42, 0.9);
+    color: var(--text-dim);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 0 1px rgba(148, 163, 184, 0.6);
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease,
+      color 0.2s ease;
+}
 
-    .close-btn {
-        background-color: var(--color-primal);
-        border: 0;
-        border-radius: 50%;
-        width: 2rem;
-        height: 2rem;
-        font-size: 1.6em;
-        position: absolute;
-        right: 4%;
-        transition: 0.2s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .close-btn:hover {
-        transform: scale(1.1);
-    }
-    .close-btn:active {
-        background-color: var(--color-primal-active);
-        transform: scale(0.9);
-    }
+.cookie-consent .close-btn:hover {
+    background: rgba(30, 64, 175, 0.9);
+    color: var(--accent-color);
+    box-shadow: var(--neon-glow);
+    transform: scale(1.03);
+}
 
-    .cookie-text {
-        font-family: var(--font-title);
-        font-weight: 500;
-    }
-    .cookie-btns {
-        display: flex;
-        justify-content: space-around;
+.cookie-consent .close-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 1px var(--accent-color);
+}
 
+.cookie-consent .cookie-icon {
+    grid-row: 1 / span 2;
+    margin-top: 2px;
+    color: var(--accent-color);
+    filter: drop-shadow(0 0 12px rgba(217, 70, 239, 0.7));
+}
 
-        button {
-            border: 0;
-            background-color: var(--color-primal);
-            padding: 3%;
-            border-radius: 8px;
-            font-family: var(--color-text-primal);
-            font-weight: 720;
-            transition: 0.2s;
-        }
-        button:hover {
-            transform: scale(1.1);
-        }
-        button:active {
-            background-color: var(--color-primal-active);
-            transform: scale(0.9);
-        }
-    }
+.cookie-consent .cookie-text {
+    margin: 0;
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--text-dim);
+}
 
+.cookie-consent .cookie-btns {
+    margin-top: 0.4rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.cookie-consent .cookie-btns button {
+    flex: 1;
+    padding: 0.45rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    font-family: var(--font);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease,
+      transform 0.15s ease, border-color 0.2s ease;
+}
+
+.cookie-consent .accept-btn {
+    background: linear-gradient(135deg, #e879f9, #d946ef);
+    color: #0f172a;
+    box-shadow: var(--neon-glow);
+}
+
+.cookie-consent .accept-btn:hover {
+    box-shadow: 0 0 24px rgba(217, 70, 239, 0.9);
+    transform: translateY(-1px);
+}
+
+.cookie-consent .accept-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 0 12px rgba(217, 70, 239, 0.7);
+}
+
+.cookie-consent .deny-btn {
+    background: transparent;
+    color: var(--text-dim);
+    border-color: rgba(148, 163, 184, 0.5);
+}
+
+.cookie-consent .deny-btn:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 16px rgba(148, 163, 184, 0.5);
+}
+
+.cookie-consent .deny-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 0 10px rgba(148, 163, 184, 0.4);
 }
 

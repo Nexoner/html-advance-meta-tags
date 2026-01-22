@@ -1,20 +1,42 @@
 
 :root {
-    --color-main: #F5F5F5;
-    --color-primal: #004BFF;
-    --color-primal-active: #009BFF;
-    --color-text-main: #000000;
-    --color-text-primal: #666666;
-    --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    --font-title: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-body {
-    margin: 1% 2% 2% 2%;
-    border-radius: 12px;
+    /* Core cyberpunk palette */
+    --bg-color: #0d0d12;      /* Глубокий темный фон */
+    --card-bg: #16161e;      /* Фон карточек/панелей */
+    --accent-color: #d946ef; /* Яркий неоновый розовый/магентовый */
+    --accent-soft: rgba(217, 70, 239, 0.25);
+    --text-main: #ffffff;
+    --text-dim: #94a3b8;     /* Тусклый серо-синий текст */
+    --border-subtle: rgba(148, 163, 184, 0.25);
+    --neon-glow: 0 0 18px rgba(217, 70, 239, 0.55);
+  
+    /* Типографика */
+    --font: system-ui, -apple-system, BlinkMacSystemFont, 'Inter', 'Poppins',
+      'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+      'Helvetica Neue', sans-serif;
+    --font-title: system-ui, -apple-system, BlinkMacSystemFont, 'Inter',
+      'Poppins', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+      'Helvetica Neue', sans-serif;
+  
+    /* Альясы под старую палитру (для остальных страниц) */
+    --color-main: var(--card-bg);
+    --color-primal: var(--accent-color);
+    --color-primal-active: #e879f9;
+    --color-text-main: var(--text-main);
+    --color-text-primal: var(--text-dim);
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
     font-family: var(--font);
-}
-
-ul {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+  
+  ul {
     list-style-type: none;
-}
+    padding: 0;
+    margin: 0;
+  }
